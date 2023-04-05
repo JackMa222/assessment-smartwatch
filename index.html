@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="imgs/favicon.svg" type="image/x-icon">
+    <title>Smart Watches</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0e3f72186b.js" crossorigin="anonymous"></script>
+    <script defer src="js/index.js"></script>
+    <script defer src="js/donepasts.js"></script>
+    <script defer src="js/donepastsbutton.js"></script>
+    <script defer src="js/pTopFunc.js"></script>
+</head>
+
+<body class=""> 
+    <div class="navbarb">
+        <a class="ntitle" href="index.html">Smart Watches</a>
+        <div class="navbar">
+            <a href="index.html#objectives">Objectives</a>
+            <a href="index.html#appropriation">Appropriation</a>
+            <a href="index.html#impacts">Impacts</a>
+            <a href="index.html#prediction">Predictions</a>
+        </div>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="bigpicturemedia">
+                    <img src="imgs/media10.webp" alt="Google webpage: Fitbit welcome to the google family">
+                </div>
+                <div class="bptc">
+                    <h1>Google acquirers Fitbit after approval from European regulators <a target="_blank"
+                            href="https://blog.google/products/devices-services/fitbit-acquisition/">Read more</a></h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="bigpicturemedia">
+                    <img src="imgs/media12.jpg" alt="Apple Watches">
+                </div>
+                <div class="bptc">
+                    <h1>Apple Watch Series 9: Latest Rumors <a target="_blank"
+                            href="https://www.wareable.com/apple/apple-watch-series-9-rumors-release-date-price">Read
+                            more</a></h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="bigpicturemedia">
+                    <img src="imgs/media11.avif" alt="Queensland researcher holding smartwatch in front of computer display">
+                </div>
+                <div class="bptc">
+                    <h1>Queensland study announced in a bid to detect epileptic seizures with smart watches <a
+                            target="_blank"
+                            href="https://www.abc.net.au/news/2023-03-28/queensland-research-epilepsy-seizure-detected-by-smartwatch/102150666">Read
+                            more</a></h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="bigpicturemedia">
+                    <img src="imgs/media13.jpg" alt="Hospital-grade heart rate monitor including SpO2">
+                </div>
+                <div class="bptc">
+                    <h1>Melbourne mum says a smart watch saved her life <a target="_blank"
+                            href="https://www.9news.com.au/national/can-a-smartwatch-save-your-life-one-melbourne-mum-says-her-samsung-device-did/1c15a98d-f939-4912-8126-c2e5d7145a2e">Read
+                            more</a></h1>
+                </div>
+            </div>
+        
+        <div class="carousel-item">
+            <div class="bigpicturemedia">
+                <img src="imgs/media14.jpg" alt="Range of four Garmin watches">
+            </div>
+            <div class="bptc">
+                <h1>New feautre updates including jet lag adviser available on new Garmin smartwatches <a
+                        target="_blank"
+                        href="https://www.garmin.com/en-US/newsroom/press-release/outdoor/garmin-announces-feature-updates-to-several-of-its-smartwatches/">Read
+                        more</a></h1>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <button class="carousel-control-prev cb-control" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon c-control" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next cb-control" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon c-control" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+    <br>
+    <br>
+    <div id="dpss" class="dpswitch">
+        <div class="dpsheading">
+            <h1>How was this achieved in the past?</h1>
+        </div>
+        <div class="dpswitchbutton">
+            <button onclick="buttonChangeV(1); disableAutomatic()" id="dps1">Time/date</button>
+            <button onclick="buttonChangeV(2); disableAutomatic()" id="dps2">Health/fitness tracking</button>
+            <button onclick="buttonChangeV(3); disableAutomatic()" id="dps3">Information/entertainment</button>
+        </div>
+        <div class="dpswitchtext">
+            <p id="dpst">Simple watches came long before the smart watch, originating from pocket watches between
+                the
+                15th and 16th century. The popularity and widespread availability of 'wrist watches' (what we call
+                today
+                as simply 'watches') began in the 19th century, and has developed since, evolving to highly advanced
+                watches including mechanical, automatic, electrical and quartz watches, all at a varying price. Some
+                of
+                these watches also included the date (day/date/month). 'Digital watches': battery-powered watches that displayed the time and usually date on a LED or LCD screen gained popularity in the 1970s and has led to the evolution to smart watches.</p>
+        </div>
+    </div>
+    <div class="break"></div>
+    <div class="objectives" id="objectives">
+        <div class="heading">
+            <h1>What are the main objectives of Smart Watches?</h1>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 obj-con">
+            <div class="col">
+                <div class="card">
+                    <div class="img-card">
+                        <img src="imgs/media5.jpg" class="card-img-top" alt="Apple watch with heart rate open currently at 68 BPM">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Health Tracking</h5>
+                        <p class="card-text">These devices also provide health stats, and many are often focused
+                            towards
+                            living towards a healthy life. Some of these watches also include many safety features,
+                            including abnormal heart rate monitors, fall detections, Sp02 monitors and sleep pattern
+                            trackers. Along with these health safety factors, most of them also include SOS
+                            Assistances
+                            features, which usually comprise of two tools: notifying emergency services, and
+                            notifying
+                            selected friends/family members of your whereabouts.</p>
+                    </div>
+                    <a target="_blank" href="https://support.apple.com/en-gb/guide/watch/apdc2bf82d90/watchos" class="btn btn-primary">Explore Apple Watch health tracking facts</a>
+                </div>
+                <div class="card">
+                    <div class="img-card">
+                        <img src="imgs/media3.jpg" class="card-img-top" alt="selection of watch faces">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Time</h5>
+                        <p class="card-text">Smart watches obviously include the original idea of watches: ability to
+                            tell
+                            time. Further to this, they also offer simple date information at a glance: the
+                            beginning of
+                            more advanced calendar features.</p>
+                    </div>
+                    <a target="_blank" href="https://www.theverge.com/2016/2/24/11101230/what-watch-calendar-smartwatch-swiss-wearables-kickstarter" class="btn btn-primary">Explore an innovative yet simplistic calendar-focused watch face</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="img-card">
+                        <img src="imgs/media2.webp" class="card-img-top" alt="Two smart watches at the end of an 'activity' with heart rate showing on the second">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Fitness tracking</h5>
+                        <p class="card-text">Smart (or specifically ‘fitness’ type) watches also usually include
+                            physical tracking metrics including steps, distance (km/miles), calories burnt, active
+                            (intensity) minutes, heart rate trackers, and sleep data, including other statistics
+                            based
+                            on sleep like ‘body battery’ or ‘awake metres’. They also usually include goal alerts,
+                            for
+                            example reaching 10,000 steps, or a desired amount of ‘active’ minutes. On top of these
+                            ‘background’ trackers, many watches allow the ability to record many different
+                            activities
+                            including: running, biking, walking, swimming, strength training, yoga, pilates, stair
+                            steppers, indoor walking/running and many others. Outside activities often use the
+                            onboard
+                            GPS (global positioning system) to measure distance, speed and map out activities. Many
+                            watches also include automatic activity detection that records what it thinks is
+                            activities
+                            based on past behaviors. Some fitness smart watches also allow for waist (strap) heart
+                            rate
+                            monitors to be connected to the watches.</p>
+                    </div>
+                    <a target="_blank" href="https://www.fitbit.com/global/us/products/find-your-fit" class="btn btn-primary">Take the quiz! Which fitbit is right for you?</a>
+                </div>
+                <div class="card">
+                    <div class="img-card">
+                        <img src="imgs/media7.jpg" class="card-img-top" alt="Map with old style phone on top with another map displayed with '3D' pins edited in">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Navigation and Safety</h5>
+                        <p class="card-text">A more minor yet still important feature of Smart Watches is their
+                            navigation (usually GPS) features. This is also includes the ever-important safety features, especially for children. Smartwatches allow for parents to be able to track their children when they are out and about. Through the use of common smartwatch SOS features, people can alert authorities and close friends and family if they are in an unsafe situation. Fall Detection features are also important in smart watches, especially useful for older people, and alerts authorities and close friends and family in the same way of SOS features.</p>
+                    </div>
+                    <a target="_blank" href="https://www.kaspersky.com.au/resource-center/threats/smartwatch-security-risks" class="btn btn-primary">Kaspersky Advice: Smart Watch Safety Risks</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="img-card">
+                        <img src="imgs/media6.webp" class="card-img-top" alt="Smart watch displaying Spotify, Relax, Weather and Music with musical symbols 'coming out' the sides">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Entertainment</h5>
+                        <p class="card-text">Smart watches include many different entertainment features, varying
+                            from
+                            model to model. These include music, podcasts, social media, e-reading, games and sports
+                            updates. Some watches also include the ability for photo and video storage, as well as on-demand playback. This all varies based on the storage on each of these smart watches. Another key feature here is the ability to be connect to virtual (personal) assistants like Siri. These a key in improving productivity but also in accessing information quickly, through just using your voice.</p>
+                    </div>
+                    <a target="_blank" href="https://beebom.com/best-apple-watch-games/" class="btn btn-primary">Beebom: 15 Best Apple Watch Games</a>
+                </div>
+                <div class="card">
+                    <div class="img-card">
+                        <img src="imgs/media8.webp" class="card-img-top" alt="Smartwatch with Google Pay selected">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile Payments</h5>
+                        <p class="card-text">Smart watches allow for 'mobile payments' which are sometimes described
+                            as
+                            a 'credit-card' on your wrist to occur. This means that people can 'tap and go' from the
+                            ease of their wrist. This is especially useful to people if they want to avoid carrying
+                            cards and wallets around. For example, many cyclists use this feature when buying coffee
+                            when on a ride.</p>
+                    </div>
+                    <a target="_blank" href="https://support.apple.com/en-au/HT206638" class="btn btn-primary">Banks offering Apple Pay (AU)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="break"></div>
+    <div class="appropriation" id="appropriation">
+        <div class="heading">
+            <h1>Appropriateness of Smart Watches for Digital Connectivity</h1>
+        </div>
+        <div class="card">
+            <div class="img-card">
+                <img src="imgs/media15.png" class="card-img-top pre-icard" alt="Four images representing digital innovation through a range of holograms">
+            </div>
+            <div class="card-body">
+                <p class="card-text">Smart watches allow for many things, but one of the biggest is the way that it allows us to always be connected to the digital world around us. For example, we are now able to receive emails, text messages, notifications and more all from our wrist. Not only this, but replies can be effortlessly sent in a matter of seconds. The vast amount of information that can be accessed including weather, sports results, upcoming events and more all from our wrist provide us with information at any time we need it. The ability to set reminders and alarms on our wrist also keeps us ‘on-time’ and attempts to limit disruptions to our daily life is also essential in the modern world. All of the above features are available on smart phones, but smart watches 'unobtrusive' ability to do all this on someone's wrist is what makes it stand out and appropriate for digital connectivity.<br><br>However, smart watches do have some downfalls in this particular category. The main sacrifice between smart watches and mobile phones is the heavily differing screen sizes. This is especially noticeable as manufactures create larger and larger phone screens, many people 'cannot stand' to use the small screen size of smart watches. Some of the other downsides that might not make the the most appropriate for digital connectivity include: battery life, aesthetics, distractions and health concerns.</p>
+            </div>
+        </div>
+    </div>
+    <div class="break"></div>
+    <div class="impacts" id="impacts">
+        <div class="heading">
+            <h1>Impacts of Smart Watches</h1>
+        </div>
+        <div class="accordion acc-impacts" id="accordionImpacts">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">Individual</button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionImpacts">
+                    <div class="accordion-body">
+                        Smart watches help people to better understand daily life and their health along with
+                        physical activity. Not only this, but smart watches equip people to live healthy lives
+                        through features that keep them 'physically active' and help them relax when they need to.
+                        Smart watches also allow for monitoring of important health measures like heart rates,
+                        allowing important intervention to sometimes fatal incidents. The convenience of smart watches to access information like weather, notifications, calendars, reminders, stopwatches and more allow ease during peoples busy lives. A key impact is also their time management features like alarms, reminders, calendar all of which that can be synced from a mobile phone allow for people to stay 'on time' through their watch.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Society</button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionImpacts">
+                    <div class="accordion-body">
+                        Smart watches have connected members of society together but have also provided an
+                        assumption to people that we must always be connected. This can be emotionally damaging as
+                        it means taking a break from life can be significantly challenging when everything,
+                        including messaging and emails are all linked to our wrist. Despite this, smart watches have led to an overall productivity and connectivity increase in both personal and work lives. They have also, on average, improved the health and wellbeing of many people through their fitness tracking and 'reminding' features. However, smart watches have also socially isolated some people thrrough the increased reliance on technology. As well as this, their are serious privacy (and security) concerns around smart watches, specifically on the data they might collect like location.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">Environment</button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionImpacts">
+                    <div class="accordion-body">
+                        Smart watches have also had a large impact on the environment, as people are often quick to
+                        dispose of their ‘old’ devices once a new model arrives. Not only this, but smart watches'
+                        small form factor means animals are susceptible to consuming this, often leading to illness
+                        or death. The extraction of minerals for these watches including rare earth metals and lithium also lead to environmental problems
+                        including pollution of the environment that they are sourced from. While this can be done responsibily, the higher costs and current human demand make it a tough option for manufacturers to take. 
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <div class="acc-ex">
+                        <a target="_blank" href="https://www.frontiersin.org/articles/10.3389/fbuil.2022.787289/full">Interested? Read more: How wearables in Indoor Environments can be used to improve health and architectural design.</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="break"></div>
+    <div class="prediction" id="prediction">
+        <div class="heading">
+            <h1>Predictions</h1>
+        </div>
+        <div class="card">
+            <div class="img-card">
+                <img src="imgs/media9.webp" class="card-img-top pre-icard" alt="Person typing on laptop keyboard">
+            </div>
+            <div class="card-body">
+                <p class="card-text">In the future, I predict that smart watches will be more technologically advanced
+                    including more sensors but also equipped with AI technology that allows the watch to better
+                    understand our life. I also see watches growing larger to allow for more technology but also larger
+                    screens that means more information can be displayed at once. Eventually in the future I see smart
+                    watches potentially replacing mobile phones or becoming the more 'important' of the two when they
+                    become complex enough. I also see smart watches lowering in price and having a wide price range in the same way that phones have in the past few years. From this, I believe that a large amount of the population will have a smart watch, be it simple (maybe combined with a new phone?) or advanced like the current mainstream watches. I also see smart watches being an important tool in the workplace across many different industries as tool to speed up activities. For example, stud finders might be wirelessly connected to smart watches to provide results as well as advanced mapping of an area.</p>
+            </div>
+        </div>
+    </div>
+    <button class="pTop" onclick="pageTop()" id="pTop" title="Return to top of page">Go to Top <i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+    <footer>
+        <div class="blinkscon">
+            <div class="blinks">
+                <a href="index.html#objectives">Objectives</a>
+                <a href="index.html#appropriation">Appropriation</a>
+                <a href="index.html#impacts">Impacts</a>
+                <a href="index.html#predictions">Predictions</a>
+            </div>
+        </div>
+        <p>Computing Assessment Task 1 - <i>Smart Watches</i></p>
+    </footer>
+</body>
+
+</html>
